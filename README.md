@@ -27,3 +27,19 @@ To startup api server in local run `uvicorn app:app --reload` and for production
 ### Standalone file
 
 To run file as standalone run `python3 main.py NAME --message`
+
+# Docker setup 
+
+## Build docker container
+
+```sh
+docker-composer build
+```
+
+## Start docker container
+
+```sh
+docker-compose up
+```
+
+- This will start api server on port 8005 of host machine
