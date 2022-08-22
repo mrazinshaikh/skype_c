@@ -1,0 +1,12 @@
+version: '3'
+services:
+    skype_bot:
+        container_name: skype_bot
+        build:
+            context: .
+            dockerfile: Dockerfile
+        ports:
+            - "8005:8000"
+        volumes:
+            - ./:/var/www/html
+        tty: true
